@@ -16,10 +16,24 @@
     // Ci sono almeno un paio di funzioni del js che possono tornarvi utili, ma non le abbiamo viste...dovrete cercarle voi!!
 
     var cognomi =['ronaldo', 'dybala', 'morata']
-    var utente = prompt('inserisci il tuo cognome')
-    cognomi.push(utente)
+    var user = prompt('inserisci il tuo cognome')
+    cognomi.push(user)
     cognomi.sort()
     console.log(cognomi)
+    var value = 0;
+    for (i = 0; i < cognomi.lenght; i++){
+
+      var cognomeX = cognomi[i];
+
+      if (cognomeX == user){
+
+        var value = i + 1;
+
+      }
+      console.log(value,user);
+    }
+
+    console.log(value,user);
 
 
 
